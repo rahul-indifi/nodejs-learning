@@ -1,0 +1,39 @@
+moment is an NPM library for manupulating and displaying dates
+
+(1)
+**********
+before installing any npm package it is required to set up your application 
+so that it can keep track of  the packages that are installed, 
+the versions that the app is using and if could be given to another developer 
+then he could easily know which packages the app is depedent upon.
+`NPM INIT`
+it creates a package.json file for the server
+**********
+
+(2)
+**********
+now getting moment library
+`NPM INSTALL MOMENT --SAVE`
+save is used because we like to note what library we are using in our application
+and --save makes a note of it in the package.json file
+
+`NPM INSTALL` => look at package.json and install all the dependencies.
+when you don't have node_modules folder (maybe you are giving the application to some other developer)
+then if package.json file has the name of the library then it will automatically install all the modules by this command `NPM INSTALL`
+**********
+
+(3)
+**********
+Using the module in the app:
+let moment = require('moment');
+**********
+
+
+
+****************************************************************************************
+Global Installation
+****************************************************************************************
+mostly the dependencies that i need then during my development process, that means the app will run without them bit they can make the development peocess much easy.
+`NPM INSTALL -G NODEMON`
+this command will install the nodemon globally in my computer so that i can access it from any folder in my computer
+the dependency installed globally will not be reflected to the package.json file.
